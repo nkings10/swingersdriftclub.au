@@ -4,124 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drift Club</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            max-width: 300px;
+            margin-bottom: 2rem;
+        }
+        .contact {
+            font-size: 1.2rem;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-white">
-    <!-- Navigation -->
-    <nav class="bg-gray-800 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-xl font-bold">DRIFT CLUB</a>
-            <div class="space-x-4">
-                <a href="#about" class="hover:text-gray-300">About</a>
-                <a href="#events" class="hover:text-gray-300">Events</a>
-                <a href="#join" class="hover:text-gray-300">Join Us</a>
-                <a href="#contact" class="hover:text-gray-300">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="py-20 text-center">
-        <div class="container mx-auto px-4">
-            <h1 class="text-5xl font-bold mb-4">Welcome to Drift Club</h1>
-            <p class="text-xl text-gray-400 mb-8">Experience the thrill of controlled chaos</p>
-            <a href="#join" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full">Join Now</a>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">About Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <img src="/api/placeholder/600/400" alt="Drift event" class="rounded-lg shadow-lg">
-                </div>
-                <div class="flex items-center">
-                    <div>
-                        <p class="text-gray-300 mb-4">Welcome to the premier drift club in the region. We're passionate about the art of drifting and building a community of skilled drivers.</p>
-                        <p class="text-gray-300">Whether you're a beginner or an experienced driver, our club offers opportunities to learn, practice, and compete in a safe and controlled environment.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section id="events" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Upcoming Events</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Event 1 -->
-                <div class="bg-gray-800 rounded-lg p-6">
-                    <img src="/api/placeholder/400/300" alt="Practice day" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2">Practice Day</h3>
-                    <p class="text-gray-300 mb-4">Open practice session for all skill levels. Professional instructors available.</p>
-                    <p class="text-gray-400">Next Saturday • 10:00 AM</p>
-                </div>
-                <!-- Event 2 -->
-                <div class="bg-gray-800 rounded-lg p-6">
-                    <img src="/api/placeholder/400/300" alt="Competition" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2">Local Competition</h3>
-                    <p class="text-gray-300 mb-4">Monthly competition for intermediate and advanced drivers.</p>
-                    <p class="text-gray-400">Next Month • All Day Event</p>
-                </div>
-                <!-- Event 3 -->
-                <div class="bg-gray-800 rounded-lg p-6">
-                    <img src="/api/placeholder/400/300" alt="Beginner course" class="rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2">Beginner Course</h3>
-                    <p class="text-gray-300 mb-4">Introduction to drifting fundamentals and car control.</p>
-                    <p class="text-gray-400">Every Sunday • 9:00 AM</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Join Section -->
-    <section id="join" class="py-16 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Join Our Club</h2>
-            <div class="max-w-2xl mx-auto">
-                <form class="space-y-6">
-                    <div>
-                        <label class="block text-gray-300 mb-2">Name</label>
-                        <input type="text" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white">
-                    </div>
-                    <div>
-                        <label class="block text-gray-300 mb-2">Email</label>
-                        <input type="email" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white">
-                    </div>
-                    <div>
-                        <label class="block text-gray-300 mb-2">Experience Level</label>
-                        <select class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white">
-                            <option>Beginner</option>
-                            <option>Intermediate</option>
-                            <option>Advanced</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg">Submit Application</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
-            <div class="max-w-2xl mx-auto text-center">
-                <p class="text-gray-300 mb-4">Have questions? We're here to help!</p>
-                <p class="text-gray-300 mb-4">📧 info@driftclub.com</p>
-                <p class="text-gray-300">📱 (555) 123-4567</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400">&copy; 2025 Drift Club. All rights reserved.</p>
-        </div>
-    </footer>
+<body>
+    <!-- Replace the src with your actual logo image -->
+    <img src="images/logo.png" alt="Swingers Drift Club Logo" class="logo">
+    <a href="mailto:info@swingersdriftclub.au" class="contact">info@swingersdriftclub.au</a>
 </body>
 </html>
